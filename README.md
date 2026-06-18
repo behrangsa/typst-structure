@@ -20,11 +20,11 @@ Command:
 Output:
 
 ```
-Markup: 88 [
+Markup: 147 [
     Hash: "#",
-    FuncCall: 86 [
+    FuncCall: 145 [
         Ident: "table",
-        Args: 81 [
+        Args: 140 [
             LeftParen: "(",
             Space: "\n  ",
             Named: 10 [
@@ -32,6 +32,46 @@ Markup: 88 [
                 Colon: ":",
                 Space: " ",
                 Int: "2",
+            ],
+            Comma: ",",
+            Space: "\n  ",
+            FuncCall: 55 [
+                FieldAccess: 12 [
+                    Ident: "table",
+                    Dot: ".",
+                    Ident: "header",
+                ],
+                Args: 43 [
+                    LeftParen: "(",
+                    Space: "\n    ",
+                    Named: 8 [
+                        Ident: "level",
+                        Colon: ":",
+                        Space: " ",
+                        Int: "1",
+                    ],
+                    Comma: ",",
+                    Space: "\n    ",
+                    ContentBlock: 7 [
+                        LeftBracket: "[",
+                        Markup: 5 [
+                            Text: "Month",
+                        ],
+                        RightBracket: "]",
+                    ],
+                    Comma: ",",
+                    Space: " ",
+                    ContentBlock: 9 [
+                        LeftBracket: "[",
+                        Markup: 7 [
+                            Text: "Savings",
+                        ],
+                        RightBracket: "]",
+                    ],
+                    Comma: ",",
+                    Space: "\n  ",
+                    RightParen: ")",
+                ],
             ],
             Comma: ",",
             Space: "\n  ",
