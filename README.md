@@ -20,7 +20,83 @@ Command:
 Output:
 
 ```
-Markup: 88 [Hash: "#", FuncCall: 86 [Ident: "table", Args: 81 [LeftParen: "(", Space: "\n  ", Named: 10 [Ident: "columns", Colon: ":", Space: " ", Int: "2"], Comma: ",", Space: "\n  ", ContentBlock: 9 [LeftBracket: "[", Markup: 7 [Text: "January"], RightBracket: "]"], Comma: ",", Space: " ", ContentBlock: 7 [LeftBracket: "[", Markup: 5 [Escape: "\\$", Text: "250"], RightBracket: "]"], Comma: ",", Space: "\n  ", ContentBlock: 10 [LeftBracket: "[", Markup: 8 [Text: "February"], RightBracket: "]"], Comma: ",", Space: " ", ContentBlock: 6 [LeftBracket: "[", Markup: 4 [Escape: "\\$", Text: "80"], RightBracket: "]"], Comma: ",", Space: "\n  ", ContentBlock: 7 [LeftBracket: "[", Markup: 5 [Text: "March"], RightBracket: "]"], Comma: ",", Space: " ", ContentBlock: 7 [LeftBracket: "[", Markup: 5 [Escape: "\\$", Text: "420"], RightBracket: "]"], Comma: ",", Space: "\n", RightParen: ")"]], Space: "\n"]
+Markup: 88 [
+    Hash: "#",
+    FuncCall: 86 [
+        Ident: "table",
+        Args: 81 [
+            LeftParen: "(",
+            Space: "\n  ",
+            Named: 10 [
+                Ident: "columns",
+                Colon: ":",
+                Space: " ",
+                Int: "2",
+            ],
+            Comma: ",",
+            Space: "\n  ",
+            ContentBlock: 9 [
+                LeftBracket: "[",
+                Markup: 7 [
+                    Text: "January",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: " ",
+            ContentBlock: 7 [
+                LeftBracket: "[",
+                Markup: 5 [
+                    Escape: "\\$",
+                    Text: "250",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: "\n  ",
+            ContentBlock: 10 [
+                LeftBracket: "[",
+                Markup: 8 [
+                    Text: "February",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: " ",
+            ContentBlock: 6 [
+                LeftBracket: "[",
+                Markup: 4 [
+                    Escape: "\\$",
+                    Text: "80",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: "\n  ",
+            ContentBlock: 7 [
+                LeftBracket: "[",
+                Markup: 5 [
+                    Text: "March",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: " ",
+            ContentBlock: 7 [
+                LeftBracket: "[",
+                Markup: 5 [
+                    Escape: "\\$",
+                    Text: "420",
+                ],
+                RightBracket: "]",
+            ],
+            Comma: ",",
+            Space: "\n",
+            RightParen: ")",
+        ],
+    ],
+    Space: "\n",
+]
 ```
 
 ### Against Invalid Table
@@ -32,5 +108,53 @@ Markup: 88 [Hash: "#", FuncCall: 86 [Ident: "table", Args: 81 [LeftParen: "(", S
 Output:
 
 ```
-Markup: 120 [Text: "| Month", Space: "    ", Text: "| Savings", Space: "  ", Text: "|", Space: "\n", Text: "|", Space: " ", Shorthand: "---", Shorthand: "---", Shorthand: "--", Space: " ", Text: "|", Space: " ", Shorthand: "---", Shorthand: "---", Shorthand: "--", Space: " ", Text: "|", Space: "\n", Text: "| January", Space: "  ", Text: "|", Space: " ", Escape: "\\$", Text: "250", Space: "    ", Text: "|", Space: "\n", Text: "| February", Space: " ", Text: "|", Space: " ", Escape: "\\$", Text: "80", Space: "     ", Text: "|", Space: "\n", Text: "| March", Space: "    ", Text: "|", Space: " ", Escape: "\\$", Text: "420", Space: "    ", Text: "|", Space: "\n"]
+Markup: 120 [
+    Text: "| Month",
+    Space: "    ",
+    Text: "| Savings",
+    Space: "  ",
+    Text: "|",
+    Space: "\n",
+    Text: "|",
+    Space: " ",
+    Shorthand: "---",
+    Shorthand: "---",
+    Shorthand: "--",
+    Space: " ",
+    Text: "|",
+    Space: " ",
+    Shorthand: "---",
+    Shorthand: "---",
+    Shorthand: "--",
+    Space: " ",
+    Text: "|",
+    Space: "\n",
+    Text: "| January",
+    Space: "  ",
+    Text: "|",
+    Space: " ",
+    Escape: "\\$",
+    Text: "250",
+    Space: "    ",
+    Text: "|",
+    Space: "\n",
+    Text: "| February",
+    Space: " ",
+    Text: "|",
+    Space: " ",
+    Escape: "\\$",
+    Text: "80",
+    Space: "     ",
+    Text: "|",
+    Space: "\n",
+    Text: "| March",
+    Space: "    ",
+    Text: "|",
+    Space: " ",
+    Escape: "\\$",
+    Text: "420",
+    Space: "    ",
+    Text: "|",
+    Space: "\n",
+]
 ```

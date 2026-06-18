@@ -13,7 +13,7 @@ fn main() -> std::io::Result<()> {
 
     let source_code = fs::read_to_string(args.source)?;
     let ast = parse(&source_code);
-    println!("{:?}", ast);
+    println!("{:#?}", ast);
 
     Ok(())
 }
