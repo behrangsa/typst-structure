@@ -4,7 +4,7 @@
 
 ```bash
 nix develop
-nix build
+nix build      # or cargo build
 ```
 
 ## Run
@@ -197,4 +197,504 @@ Markup: 120 [
     Text: "|",
     Space: "\n",
 ]
+```
+
+### JSON output:
+
+```bash
+./result/bin/typst-structure --source /path/to/invalid-table.typ --json
+```
+
+Output:
+
+```json
+{
+  "kind": "Markup",
+  "len": 147,
+  "children": [
+    {
+      "kind": "Hash",
+      "len": 1,
+      "text": "#"
+    },
+    {
+      "kind": "FuncCall",
+      "len": 145,
+      "children": [
+        {
+          "kind": "Ident",
+          "len": 5,
+          "text": "table"
+        },
+        {
+          "kind": "Args",
+          "len": 140,
+          "children": [
+            {
+              "kind": "LeftParen",
+              "len": 1,
+              "text": "("
+            },
+            {
+              "kind": "Space",
+              "len": 3,
+              "text": "\n  "
+            },
+            {
+              "kind": "Named",
+              "len": 10,
+              "children": [
+                {
+                  "kind": "Ident",
+                  "len": 7,
+                  "text": "columns"
+                },
+                {
+                  "kind": "Colon",
+                  "len": 1,
+                  "text": ":"
+                },
+                {
+                  "kind": "Space",
+                  "len": 1,
+                  "text": " "
+                },
+                {
+                  "kind": "Int",
+                  "len": 1,
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 3,
+              "text": "\n  "
+            },
+            {
+              "kind": "FuncCall",
+              "len": 55,
+              "children": [
+                {
+                  "kind": "FieldAccess",
+                  "len": 12,
+                  "children": [
+                    {
+                      "kind": "Ident",
+                      "len": 5,
+                      "text": "table"
+                    },
+                    {
+                      "kind": "Dot",
+                      "len": 1,
+                      "text": "."
+                    },
+                    {
+                      "kind": "Ident",
+                      "len": 6,
+                      "text": "header"
+                    }
+                  ]
+                },
+                {
+                  "kind": "Args",
+                  "len": 43,
+                  "children": [
+                    {
+                      "kind": "LeftParen",
+                      "len": 1,
+                      "text": "("
+                    },
+                    {
+                      "kind": "Space",
+                      "len": 5,
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "Named",
+                      "len": 8,
+                      "children": [
+                        {
+                          "kind": "Ident",
+                          "len": 5,
+                          "text": "level"
+                        },
+                        {
+                          "kind": "Colon",
+                          "len": 1,
+                          "text": ":"
+                        },
+                        {
+                          "kind": "Space",
+                          "len": 1,
+                          "text": " "
+                        },
+                        {
+                          "kind": "Int",
+                          "len": 1,
+                          "text": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "Comma",
+                      "len": 1,
+                      "text": ","
+                    },
+                    {
+                      "kind": "Space",
+                      "len": 5,
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "ContentBlock",
+                      "len": 7,
+                      "children": [
+                        {
+                          "kind": "LeftBracket",
+                          "len": 1,
+                          "text": "["
+                        },
+                        {
+                          "kind": "Markup",
+                          "len": 5,
+                          "children": [
+                            {
+                              "kind": "Text",
+                              "len": 5,
+                              "text": "Month"
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "RightBracket",
+                          "len": 1,
+                          "text": "]"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "Comma",
+                      "len": 1,
+                      "text": ","
+                    },
+                    {
+                      "kind": "Space",
+                      "len": 1,
+                      "text": " "
+                    },
+                    {
+                      "kind": "ContentBlock",
+                      "len": 9,
+                      "children": [
+                        {
+                          "kind": "LeftBracket",
+                          "len": 1,
+                          "text": "["
+                        },
+                        {
+                          "kind": "Markup",
+                          "len": 7,
+                          "children": [
+                            {
+                              "kind": "Text",
+                              "len": 7,
+                              "text": "Savings"
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "RightBracket",
+                          "len": 1,
+                          "text": "]"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "Comma",
+                      "len": 1,
+                      "text": ","
+                    },
+                    {
+                      "kind": "Space",
+                      "len": 3,
+                      "text": "\n  "
+                    },
+                    {
+                      "kind": "RightParen",
+                      "len": 1,
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 3,
+              "text": "\n  "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 9,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 7,
+                  "children": [
+                    {
+                      "kind": "Text",
+                      "len": 7,
+                      "text": "January"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 1,
+              "text": " "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 7,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 5,
+                  "children": [
+                    {
+                      "kind": "Escape",
+                      "len": 2,
+                      "text": "\\$"
+                    },
+                    {
+                      "kind": "Text",
+                      "len": 3,
+                      "text": "250"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 3,
+              "text": "\n  "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 10,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 8,
+                  "children": [
+                    {
+                      "kind": "Text",
+                      "len": 8,
+                      "text": "February"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 1,
+              "text": " "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 6,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 4,
+                  "children": [
+                    {
+                      "kind": "Escape",
+                      "len": 2,
+                      "text": "\\$"
+                    },
+                    {
+                      "kind": "Text",
+                      "len": 2,
+                      "text": "80"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 3,
+              "text": "\n  "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 7,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 5,
+                  "children": [
+                    {
+                      "kind": "Text",
+                      "len": 5,
+                      "text": "March"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 1,
+              "text": " "
+            },
+            {
+              "kind": "ContentBlock",
+              "len": 7,
+              "children": [
+                {
+                  "kind": "LeftBracket",
+                  "len": 1,
+                  "text": "["
+                },
+                {
+                  "kind": "Markup",
+                  "len": 5,
+                  "children": [
+                    {
+                      "kind": "Escape",
+                      "len": 2,
+                      "text": "\\$"
+                    },
+                    {
+                      "kind": "Text",
+                      "len": 3,
+                      "text": "420"
+                    }
+                  ]
+                },
+                {
+                  "kind": "RightBracket",
+                  "len": 1,
+                  "text": "]"
+                }
+              ]
+            },
+            {
+              "kind": "Comma",
+              "len": 1,
+              "text": ","
+            },
+            {
+              "kind": "Space",
+              "len": 1,
+              "text": "\n"
+            },
+            {
+              "kind": "RightParen",
+              "len": 1,
+              "text": ")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Space",
+      "len": 1,
+      "text": "\n"
+    }
+  ]
+}
 ```
