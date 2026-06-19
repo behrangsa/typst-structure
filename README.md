@@ -1,5 +1,13 @@
 # Basic Typst AST Printer
 
+## Table of Contents
+
+- [Build](#build)
+- [Run](#run)
+  - [Against Valid Table](#against-valid-table)
+  - [Against Invalid Table](#against-invalid-table)
+  - [JSON output](#json-output)
+
 ## Build
 
 ```bash
@@ -17,7 +25,8 @@ Command:
 ./result/bin/typst-structure --source /path/to/valid-table.typ
 ```
 
-Output:
+<details>
+<summary>Output:</summary>
 
 ```
 Markup: 147 [
@@ -139,13 +148,16 @@ Markup: 147 [
 ]
 ```
 
+</details>
+
 ### Against Invalid Table
 
 ```bash
 ./result/bin/typst-structure --source /path/to/invalid-table.typ
 ```
 
-Output:
+<details>
+<summary>Output:</summary>
 
 ```
 Markup: 120 [
@@ -199,13 +211,16 @@ Markup: 120 [
 ]
 ```
 
-### JSON output:
+</details>
+
+### JSON output
 
 ```bash
 ./result/bin/typst-structure --source /path/to/invalid-table.typ --json
 ```
 
-Output:
+<details>
+<summary>Output:</summary>
 
 ```json
 {
@@ -698,3 +713,5 @@ Output:
   ]
 }
 ```
+
+</details>
